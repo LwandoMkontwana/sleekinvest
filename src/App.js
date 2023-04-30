@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./components/Account";
+import Browse from "./components/Browse";
+import { Footer } from "./components/Footer";
+import Hero from "./components/Hero";
+import ResponsiveAppBar from "./components/Navbar";
+import { Portiofolio } from "./components/Portiofolio";
+import Wallet from "./components/Wallet";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Watchlist from './components/Watchlist'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+    {/* <Router>
+      <Fragment>
+        <ResponsiveAppBar/>
+        <Routes>
+          <Route path="/">
+              <Hero/>
+          </Route>
+        </Routes>
+      </Fragment>
+    </Router> */}
+    
+    <Router>
+      <ResponsiveAppBar/>
+      <Routes>
+          <Route path="/" element={<Hero/>} />
+          <Route path="/portifolio" element={<Portiofolio />} />
+          <Route path="/watchlist" element={<Watchlist />} />
+          <Route path="/explore" element={<Browse/>} />
+          <Route path="/wallet" element={<Wallet />} />
+      </Routes>
+      <Footer/>
+    </Router>
+  </>
 }
 
 export default App;
