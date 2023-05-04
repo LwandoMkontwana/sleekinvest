@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import {pageList} from './Pages'
 import logo from '../images/logo.svg'
 
-// const pages = ['Portifolio', 'Watchlist', 'Browse', 'Wallet'];
+
 const settings = ['Profile', 'Account', 'Logout'];
 
 function ResponsiveAppBar() {

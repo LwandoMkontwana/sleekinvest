@@ -10,7 +10,7 @@ const Browse = () => {
     const [stocks, setStocks] = useState([]);
     const [search, setSearch] = useState('');
 
-    useEffect(() =>{
+    useEffect(() => {
         axios.get(API_KEY).then(res => {
           setStocks(res.data);
           console.log(res.data);
@@ -30,7 +30,7 @@ const Browse = () => {
       <div className = 'stock-search'>
           <h1 style={{ display: 'flex', position: 'inherit', padding: '0', margin: '100'}}>Search a stock </h1>
              <Box style={{marginTop:''}}>
-                 <TextField fullWidth label="search stocks..." id="fullWidth" onChange={handleChange} />
+            <TextField fullWidth label="search stocks..." id="fullWidth" onChange={handleChange} style={{paddingTop:'500'}}/>
              </Box>
       </div>  
       {filteredStocks.map(stock => {

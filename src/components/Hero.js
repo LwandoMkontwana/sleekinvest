@@ -1,9 +1,5 @@
 import React from 'react';
 
-const handleBtnHero = () => {
-  
-}
-
 const Hero = () => {
   return (
       <>
@@ -15,7 +11,9 @@ const Hero = () => {
           <br/>
           With SleeekInvest we put the power back in your hands by making sure that you take care of your future while doing your daily ordinary thing like shopping. 
         </p>
-        <button onClick={handleBtnHero} className='btn hero-btn'>explore markets</button>
+         <form action="/explore">
+          <button className='btn hero-btn'>explore markets</button>
+        </form>    
       </div>
     </section>
 

@@ -43,5 +43,4 @@ const Wallet = () => {
         </div>
     )
 }
-
 export default Wallet
