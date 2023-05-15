@@ -16,7 +16,12 @@ const BrowseStocks = () => {
 
     return (
         <div>
-           
+            BrowseStocks
+            <br></br>
+            mnb
+            BrowseStocks
+            <br></br>
+            mnb
         </div>
     )
 }
