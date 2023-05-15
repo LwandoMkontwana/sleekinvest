@@ -27,6 +27,8 @@ const Browse = () => {
   return (
   <div className='section-center featured-center'>
       <div className='browse-stocks'>     
+        <br />
+        <br/>
       <div className = 'stock-search'>
           <h1 style={{ display: 'flex', position: 'inherit', padding: '0', margin: '100'}}>Search a stock </h1>
              <Box style={{marginTop:''}}>

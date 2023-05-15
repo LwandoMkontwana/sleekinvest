@@ -20,7 +20,7 @@ function App() {
           <Route path="/portifolio" element={<Portiofolio />} />
           <Route path="/stocks" element={<BrowseStocks/>} />
           <Route path="/watchlist" element={<Watchlist />} />
-          {/* <Route path="/explore" element={<Browse/>} /> */}
+          <Route path="/explore" element={<Browse/>} />               
           <Route path="/wallet" element={<Wallet />} />
       </Routes>
       <Footer/>
